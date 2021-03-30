@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv sh
+
+echo "starting bind"
+exec /usr/sbin/named -u named -c /etc/bind/named.conf -f -g; 
+

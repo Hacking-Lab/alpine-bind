@@ -1,0 +1,14 @@
+$TTL 1d
+@ IN SOA ns1.evil.zz. root.evil.zz. (
+        2016010101      ; serial
+        28800           ; refresh (8 hours)
+        7200            ; retry (2 hours)
+        2419200         ; expire (4 weeks)
+        86400           ; minimum (1 day)
+)
+                NS      ns1.evil.zz.
+                NS      ns2.evil.zz.
+ns1             IN      A               1.2.3.4
+ns2             IN      A               1.2.3.4
+@               IN      A               1.2.3.4
+www             IN      CNAME   @

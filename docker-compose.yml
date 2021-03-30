@@ -1,0 +1,13 @@
+version: '3.6'
+
+services:
+  alpine-bind:
+    build: .
+    image: hackinglab/alpine-bind:3.2
+    environment:
+    - AUTHOR=e1
+    - HL_USER_USERNAME=hacker
+    ports:
+      - 53:53/tcp
+      - 53:53/udp
+
