@@ -10,5 +10,6 @@ $TTL 1d
                 NS      ns2.evil.zz.
 ns1             IN      A               1.2.3.4
 ns2             IN      A               1.2.3.4
+hacker          IN      A               1.2.3.4
 @               IN      A               1.2.3.4
 www             IN      CNAME   @
